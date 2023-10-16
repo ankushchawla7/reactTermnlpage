@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './Components/Header';
+import Whatwe from './Components/Whatwe';
+import Application from './Components/Application';
+import ProductDevelopment from './Components/ProductDevelopment';
+import ApplicationDevlopment from './Components/ApplicationDevlopment';
+import Footer from './Components/Footer';
 
-function App() {
+function Appik() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+      <Header />
+      <Whatwe />
+      <Application />
+      <ProductDevelopment />
+      <ApplicationDevlopment />
+      <Footer />
+    </>
+  )
+};
 
-export default App;
+export default Appik;
+
+

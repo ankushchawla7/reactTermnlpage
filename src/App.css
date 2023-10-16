@@ -1,38 +1,214 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-bg {
+  background-image: url('./images/png/header-bg-img.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+:root {
+  /* color */
+  --blue: #4D73F8;
+  --black_light: #252930;
+  --black_op8: #4F5358;
+  --light-sky: #F6F8FC;
+  --light-grey: #515459;
+  --copyright: #30343B;
+  /* font */
+  --fs-16: 16px;
+  --fs-22: 22px;
+  --fs-48: 48px;
+  --fs-96: 96px;
+
+
+}
+
+.nav_bg {
+  background-color: var(--black_light);
+}
+
+.op8 {
+  opacity: 0.8;
+}
+
+.copyright_bg {
+  background-color: var(--copyright);
+}
+
+.bg-light-sky {
+  background-color: var(--light-sky);
+}
+
+.light_grey {
+  color: var(--light-grey);
+}
+
+.bg_light_black {
+  background: var(--black_light);
+}
+
+.blue_text {
+  color: var(--blue);
+}
+
+.black_light_text {
+  color: var(--black_light);
+}
+
+.black_op8 {
+  color: var(--black_op8);
+}
+
+.fs-16 {
+  font-size: var(--fs-16);
+}
+
+.fs-22 {
+  font-size: var(--fs-22);
+}
+
+.fs-48 {
+  font-size: var(--fs-48);
+}
+
+.fs-96 {
+  font-size: var(--fs-96);
+}
+
+.ff-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.ff-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.ff-josphins {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.butn {
+  background-color: var(--blue);
+  border-radius: 74px;
+  border: none;
+  padding: 15px 30px;
+}
+
+.line-179 {
+  line-height: 179.188%;
+}
+
+.line-166 {
+  line-height: 166.188%;
+}
+
+.slick-dots {
+  display: none !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--blue) !important;
+}
+
+.py-122 {
+  padding: 122px 0;
+}
+
+
+.what-bg {
+  background-color: var(--light-sky);
+}
+
+.logo-property {
+  height: 56px;
+  width: 176px;
+  cursor: pointer;
+}
+.h-675{
+  height: 675px;
+}
+
+@media (max-width:576.98px) {
+  :root {
+    --fs-22: 16px;
+    --fs-48: 25px;
+    --fs-96: 32px;
+
+  }
+
+  .py-122 {
+    padding: 30px 0;
+  }
+
+  .butn {
+    padding: 10px 20px
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width:575.98px) {
+  :root {
+    --fs-96: 40px;
+    --fs-22: 18px;
+    --fs-48: 30px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .py-122 {
+    padding: 40px 0;
+  }
+}
+
+@media (min-width:767.98px) {
+  :root {
+    --fs-96: 50px !important;
+    --fs-22: 20px !important;
+    --fs-48: 40px;
+  }
+
+  .py-122 {
+    padding: 45px 0;
+  }
+}
+
+@media (min-width:991.98px) {
+  :root {
+    --fs-96: 96px !important;
+    --fs-22: 22px !important;
+  }
+
+
+}
+
+@media (min-width:1199.98px) {
+  .slick-dots li button:before {
+    font-size: 22px !important;
+    top: 50%;
+  }
+
+  .pb-XL-100 {
+    padding-bottom: 100px !important;
+  }
+
+  .slick-dots {
+    display: block;
+    bottom: -20% !important;
+    display: flex !important;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .py-122 {
+    padding: 122px 0;
+  }
+  .min-xl-vh-100{
+    min-height: 100vh;
   }
 }
